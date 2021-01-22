@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(1+"2"+"2");
+        /* This will print 122. Because the int 1 concatenating wiht the string type 2's. */
+        console.log(1+ +"2"+"2");
+        /* This will print 32. Because the statement +"2" will cast the string type to the int type that is 2, 1+2=3 . And the again the concatenation of strings done. */
+        console.log(1+ -"1"+"2");
+        /* This will print 02. As the above explanation statement -"1" wil cast 1 to the int 0. And then the subtration takes palce in 1-1=0. And the concatenation of strings. */ 
+        console.log(+"1"+"1"+"2");
+        /* This will print 112. As above, the +"1" will casted to the int 1 and then the concatenation of the strings.*/
+        console.log("A"-"B"+"2");
+        /* This can be explained as- the operator other than the "+" in the strings, or for concatenating the strings and int is not allowed. Therefore, it gives the error of NaN. Here it is concatenated with the +"2" as it the string type.*/ 
+        console.log("A"-"B"+2);
+
+    var marks=25;
+        if(marks>90)                   { console.log("AA"); }
+        else if(marks>80 && marks<=90) { console.log("AB"); }
+        else if(marks>70 && marks<=80) { console.log("BB"); }
+        else if(marks>60 && marks<=70) { console.log("BC"); }
+        else if(marks>50 && marks<=60) { console.log("CC"); }
+        else if(marks>40 && marks<=50) { console.log("CD"); }
+        else if(marks>30 && marks<=40) { console.log("DD"); }
+        else if(marks<=30)             { console.log("FF"); }
+ 
+    </script>
+</body>
+</html>
